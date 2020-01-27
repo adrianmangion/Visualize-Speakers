@@ -1,0 +1,8 @@
+1. Customer needs to sign in to complete purchase
+2. Search page - needs to include sorting 
+3. Cart dropdown
+4. Register, Sign-in Modals
+5. DB
+6. Report
+7. Orders page in CMS
+8. Products Page in CMS

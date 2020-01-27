@@ -1,0 +1,96 @@
+***	EcommerceShop DB	***
+
+Collections:
+Products
+	- ID
+	- Brand
+	- Model
+	- Quantity Available
+	- Colours Available
+		-Colour Name:
+		-HexValue:
+		-LinktoImg:
+	- Keywords
+	- BatteryLife
+Orders
+	-ID
+	-Products
+		-ProductID
+	-CustomerID
+	-DateofOrder
+	-TotalPrice
+Cart
+	- ID
+	- CustomerID
+	- SessionID
+	- Products
+		- ProductID
+		- Qty
+		- Price
+		- Cost
+	- Date
+	- Time
+	- TotalCost
+Customer
+	-ID
+	-Full Name
+	-Email
+	-Password
+	-VisitedProducts
+		-ProductID
+	-BoughtProducts
+		-ProductID
+	-OrderIDs
+	-JoinDate
+
+Colour Selection Feature:
+Count colours available
+Create elements on website (Colour selectors)
+Based on colour selected
+Display img from 'LinktoImg'
+
+For product description page:
+Grab fields in products collection
+Display results dynamically on page
+
+For search feature:
+Add dropdown menu to select filters
+Filters should be based on Products fields
+
+To track customer:
+Grab ProductIDs from visited and bought
+Search ProductID in Products collection
+Grab keywords of product
+Search for products with similar keywords
+Display to user carousel
+
+Add number on shopping basket:
+When user clicks add to cart
+Increment variable
+add variable as element on top of basket
+
+DB code for Products
+
+_id:
+Brand: 
+Model:
+Quantity Available:
+Keywords:
+Price:
+BatteryCapacity:
+Category:
+1star-Rating: 
+2star-Rating:
+3star-Rating:
+4star-Rating:
+5star-Rating:
+Size:
+Weight:
+Sound type: (5.1 Stereo)
+Colours: [
+{
+	Colour Name:
+	HexValue:
+	LinktoImg:
+}
+]
