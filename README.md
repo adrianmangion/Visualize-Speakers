@@ -1,11 +1,11 @@
-# Visualize-Speakers
-E-commerce website assignment
+# Visualize-Speakers E-commerce website
 
-Coursework Brief:
+<h3>Coursework Brief</h3>
 
 E-commerce website.
-- Can sell any kind of product (groceries, hardware, services, tickets, holidays, etc.).
-- Customers add items to a basket and enter their personal details (name, address, email, telephone number, etc.).
+- Website can sell any kind of product (groceries, hardware, services, tickets, holidays, etc.).
+- Add to basket functionality required
+- Customer registration required.
 - When they click ‘Buy now’ a confirmation message is displayed and the order is stored.
 - No money is taken by the website and no confirmation email is sent.
 - The front end is written in HTML, CSS and JavaScript.
@@ -16,5 +16,4 @@ E-commerce website.
 - The website tracks customers and provides recommendations.
 - Customers can register on the website and view past orders.
 - AJAX is used for some or all of the communication between client and server. 
-- For example, AJAX could be used to keep the customer’s basket and stock information synchronized. Or AJAX could be used for all communication between client and server.
-- Frameworks and libraries, such as jQuery, Bootstrap and AngularJS are allowed.
+- Frameworks and libraries used: jQuery and Bootstrap.
