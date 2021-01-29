@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./css/roboto.css" rel="stylesheet">
+<link href="./css/Bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="./css/Font Awesome/all.css" rel="stylesheet" type="text/css">
+<link href="./css/style.css" rel="stylesheet" type="text/css">
+<link href="./css/fixed.css" rel="stylesheet" type="text/css">
+<title>Vocalize | Audio Products</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+<!--Start Home Section-->
+<div id="Home"> 
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"> <a class="navbar-brand" href="index.html"><img class="img-responsive" src="img/Logo.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mr-auto">
+        <!--Menu Items-->
+        <li class="nav-item"> <a class="nav-link" href="#Home">Home</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#BT">Bluetooth Speakers</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#SB">Soundbars</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#SS">Smart Speakers</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#PC">PC Speakers</a></li>
+      </ul>
+      <!--Search Bar-->
+      <div class="nav-item" id="searchBar">
+        <input class="search-box" type="text" placeholder="Search for a product">
+        <a href="search.html">
+        <button type="button" class="search-btn"><i class="fas fa-search fa-lg"></i></button>
+        </a></div>
+      <!--Account Login-->
+      <div class="nav-item dropdown show" id="accountLogin"> 
+		  <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" id="dropdownMenuButton" href="#" aria-haspopup="true" aria-expanded="false">Your Account</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> 
+			<a class="dropdown-item" data-toggle="modal" data-target="#loginModal" href="#">Sign-in</a>
+         	<div class="dropdown-divider"></div>
+          	<a class="dropdown-item" data-toggle="modal" data-target="#registerModal" href="#">Sign-up</a> 
+		</div>
+      </div>
+      <!--Shopping Basket-->
+      <div class="nav-item" id="shoppingBasket"> <a class="shopping-basket-btn" data-toggle="modal" data-target="#cartModal" href="#"><i class="fas fa-shopping-basket fa-lg"></i></a></div>
+    </div>
+  </nav>
+  <!--Sign-in Modal-->
+  <div class="modal fade" role="dialog" id="loginModal" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header row">
+          <h3 class="modal-title text-center col-11">Login</h3>
+          <button class="close col-1" type="button" data-dismiss="modal"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <input class="form-control mx-auto"  type="text" name="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <input class="form-control mx-auto" type="password" name="password" placeholder="Password">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn mx-auto">Sign in</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End sign-in modal--> 
+  <!--Registration Modal-->
+  <div class="modal fade" role="dialog" id="registerModal" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header row">
+          <h3 class="modal-title text-center col-11">Register</h3>
+          <button class="close col-1" type="button" data-dismiss="modal"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <input class="form-control mx-auto"  type="text" name="name" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <input class="form-control mx-auto"  type="text" name="surname" placeholder="Surname">
+          </div>
+          <div class="form-group">
+            <input class="form-control mx-auto"  type="text" name="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <input class="form-control mx-auto" type="password" name="password" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <input class="form-control mx-auto" type="password" name="confirm" placeholder="Confirm Password">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn mx-auto">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Registration modal--> 
+  <!--Cart Modal-->
+  <div class="modal fade" role="dialog" id="cartModal" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header row">
+          <h3 class="modal-title text-center col-11">Your cart</h3>
+          <button class="close col-1" type="button" data-dismiss="modal"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Product ID</th>
+              <th scope="col">Product Name</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Price</th>
+              <th scop="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">10342</th>
+              <td>JBL Charge 4</td>
+              <td>1</td>
+              <td>€ 149.95</td>
+              <td><button class="close removeItem" type="button"><span aria-hidden="true">&times;</span></button></td>
+			</tr>
+          
+          	<tr>
+				<th scope="row">10356</th>
+				<td>JBL Clip 2</td>
+				<td>2</td>
+				<td>€ 49.90</td>
+				<td><button class="close removeItem" type="button"><span aria-hidden="true">&times;</span></button></td>
+		 	</tr>
+			  
+			  <tr>
+				<th scope="row">10350</th>
+				<td>JBL Flip 5</td>
+				<td>1</td>
+				<td>€ 99.95</td>
+				<td><button class="close removeItem" type="button"><span aria-hidden="true">&times;</span></button></td>
+			  </tr>
+            </tbody>
+          
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn mx-auto">Proceed to payment</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Cart modal--> 
+<!--Start of Image Carousel-->
+<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="7000">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+  </ol>
+  <!--Listbox for screen readers-->
+  <div class="carousel-inner" role="listbox"> 
+    <!--Slide 1-->
+    <div class="carousel-item active" style="background-image: url(img/Carousel/pcspeakers.jpg)">
+      <div class="carousel-caption text-center">
+        <h1>Aggressive Lower Prices</h1>
+        <h3>On all your audio needs</h3>
+        <a class="btn btn-outline-light btn-lg" href="#BT">Explore Shop</a> </div>
+    </div>
+    <!--Slide 2-->
+    <div class="carousel-item" style="background-image: url(img/Carousel/BoseSoundbar700.jpg)">
+      <div class="carousel-caption text-center">
+        <h1>Recommended for you</h1>
+        <a class="btn btn-outline-light btn-lg" href="#BT">Explore Shop</a> </div>
+    </div>
+    <!--Slide 3-->
+    <div class="carousel-item" style="background-image: url(img/Carousel/c1.jpg)">
+      <div class="carousel-caption text-center">
+        <h1>Based on your previous searches</h1>
+        <a class="btn btn-outline-light btn-lg" href="#BT">Explore Shop</a> </div>
+    </div>
+  </div>
+  <!--End of Image Inner --> 
+  <!-- Prev & Next Buttons--> 
+  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> </a> <a class="carousel-control-next" href="#carousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> </a> </div>
+<!--End of Image Carousel-->
+</div>
+<!--End Home Section--> 
+
+<!--Start BTSpeaker Section-->
+<div id="BT" class="offset">
+  <div class="jumbotron container-fluid">
+    <h3 class="heading">Bluetooth Speakers</h3>
+    <div class="heading-underline"></div>
+    <div class="row no-padding" id="btRow"></div>
+    <!-- End Row --> 
+  </div>
+  <!-- End Jumbotron --> 
+</div>
+<!--End BTSpeaker Section--> 
+
+<!--Start Soundbar Section-->
+<div id="SB" class="offset">
+  <div class="jumbotron container-fluid">
+    <h3 class="heading">Soundbars</h3>
+    <div class="heading-underline"></div>
+    <div class="row no-padding" id="sbRow"></div>
+    <!-- End of Row --> 
+  </div>
+  <!-- End of Jumbotron --> 
+</div>
+<!--End Soundbar Section--> 
+
+<!--Start SmartSpeaker Section-->
+<div id="SS" class="offset">
+  <div class="jumbotron container-fluid">
+    <h3 class="heading">Smart Speakers</h3>
+    <div class="heading-underline"></div>
+    <div class="row no-padding" id="ssRow"></div>
+    <!-- End of Row --> 
+  </div>
+  <!-- End of Jumbotron --> 
+</div>
+<!--End SmartSpeaker Section--> 
+<!--Start PCSpeaker Section-->
+<div id="PC" class="offset">
+  <div class="jumbotron container-fluid">
+    <h3 class="heading">PC Speakers</h3>
+    <div class="heading-underline"></div>
+    <div class="row no-padding" id="pcRow"></div>
+    <!-- End of Row --> 
+  </div>
+  <!-- End of Jumbotron --> 
+</div>
+<!--End PCSpeaker Section-->
+
+<footer>
+  <div class="row justify-content-center">
+    <div class="col-md-5 text-center"> <img class="logo" src="img/Logo.png" alt="logo">
+      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <strong>Contact Info</strong>
+      <p>(+356) 79797979 <br>
+        email@vocalize.com</p>
+      <a href="" target="_blank"><i class="fab fa-facebook-square"></i></a> <a href="" target="_blank"><i class="fab fa-twitter-square"></i></a> <a href="" target="_blank"><i class="fab fa-instagram"></i></a> </div>
+    <hr class="socket">
+    &copy; Vocalize </div>
+  <!-- End of Row --> 
+</footer>
+
+<!--Script Source Files--> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script defer src="js/Bootstrap/bootstrap.min.js"></script> 
+<script defer src="js/Font Awesome/all.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
